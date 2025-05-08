@@ -1,0 +1,23 @@
+{
+  "name": "js_checkpoint1",
+  "version": "1.0.0",
+  "description": "Test toi !",
+  "main": "index.js",
+  "scripts": {
+    "test:1": "jest algo/1",
+    "test:2": "jest algo/2",
+    "test:3": "jest algo/3",
+    "test:4": "jest algo/4",
+    "test:5": "jest algo/5",
+    "test:6": "jest algo/6",
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "dependencies": {
+    "js_checkpoint1": "file:"
+  }
+}

@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <title>Checkpoint 1 Portfolio</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="home.html">Instructions</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Checkpoint Javascript 1</h1>
+
+      <article>
+        <h2>📰 Introduction</h2>
+        <p>
+          Tu viens de rejoindre en tant que développeur Junior une startup
+          appelée
+          <strong>CRA7Y</strong>.
+        </p>
+        <p>
+          Leur <strong>objectif</strong> est de faire correspondre parfaitement
+          leurs talents avec des startups ambitieuses !
+        </p>
+        <p>
+          La <strong>« guerre des talents »</strong> fait rage. C'est là que
+          CRA7Y intervient, en accompagnant ces futures licornes dans leurs
+          <strong>recrutements stratégiques</strong> en Europe et dans le monde
+          entier.
+        </p>
+        <p>
+          Véritables gourous du recrutement, cette équipe de chasseurs de têtes
+          déniche les meilleures opportunités en
+          <strong>vente, marketing et management</strong> pour offrir aux
+          pépites l'aventure de leurs rêves.
+        </p>
+        <p><strong>Commençons à coder !</strong></p>
+
+        <h2>🎯 Ta mission</h2>
+        <p>
+          <strong>Attaché</strong> à Nihl (le designer UX/UI) et
+          <strong>en étroite collaboration</strong> avec Rebecca (la CTO), tes
+          missions seront :
+        </p>
+        <ul>
+          <li>
+            ✅ Participer au <strong>développement</strong> du portfolio
+            développeur selon les
+            <strong>instructions de Nihl et Rebecca</strong>
+          </li>
+          <li>
+            ✅ Utiliser la stack
+            <strong>HTML, CSS et JavaScript avec manipulation du DOM</strong>
+          </li>
+          <li>✅ Prendre du plaisir !</li>
+        </ul>
+      </article>
+
+      <article>
+        <h2>🌺 Commence par un peu de CSS (~ 1 heure)</h2>
+        <p>
+          Rebecca souhaite <strong>une application responsive</strong>, voici
+          ses instructions. <strong>Va</strong> dans le
+          <strong>portfolio</strong> via la barre de navigation en haut à
+          droite.
+        </p>
+        <p>
+          Suis attentivement les <strong>instructions ci-dessous</strong> après
+          la <strong>vidéo explicative</strong>. Tu peux aussi consulter la
+          <strong>section d'aide</strong> pour plus de détails.
+        </p>
+        <p>
+          N'hésite pas à <strong>créer</strong> des
+          <strong>conteneurs HTML</strong> et à
+          <strong>personnaliser</strong> le fichier de
+          <strong>style "portfolio.css"</strong>
+        </p>
+        <table>
+          <caption>
+            Liste des tâches :
+          </caption>
+          <thead>
+            <tr>
+              <td colspan="2"></td>
+              <th scope="col">💪 Tâches</th>
+              <th scope="colgroup" colspan="2">🆘 Aide</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="rowgroup" rowspan="6" class="basics">
+                Étapes de base
+              </th>
+              <th scope="row">
+                <label for="css_step_1">Étape 1</label>
+                <input type="checkbox" name="css_step_1" id="css_step_1" />
+              </th>
+              <td>
+                <p>
+                  Il y a un problème avec le
+                  <strong>menu de navigation</strong>, tous les
+                  <strong>liens</strong> doivent être en haut à droite (sauf le
+                  logo) pour les écrans de plus de <strong>700px</strong>.
+                </p>
+              </td>
+              <td class="problem">
+                <p>Tu as des difficultés ?</p>
+                <button onclick="handleHelp(0)">UN PETIT COUP DE POUCE</button>
+              </td>
+              <td class="help">
+                <p>
+                  Tu peux utiliser <strong>flexbox</strong> avec ses paramètres
+                  comme <strong>justify-content</strong>
+                </p>
+                <button onclick="handleHelp(0)">FERMER</button>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <label for="css_step_2">Étape 2</label>
+                <input type="checkbox" name="css_step_2" id="css_step_2" />
+              </th>
+              <td>
+                <p>
+                  Il faut un <strong>titre</strong>, une petite
+                  <strong>description</strong> et un
+                  <strong>avatar</strong> pour la première bannière.
+                </p>
+                <p>
+                  La bannière doit être <strong>centrée</strong> sur la page
+                  pour les écrans de plus de <strong>700px</strong>.
+                </p>
+              </td>
+              <td class="problem">
+                <p>Tu as des difficultés ?</p>
+                <button onclick="handleHelp(1)">UN PETIT COUP DE POUCE</button>
+              </td>
+              <td class="help">
+                <p>
+                  Tu peux <strong>ajouter</strong> des
+                  <strong>conteneurs HTML</strong> et
+                  <strong>modifier</strong> le fichier CSS
+                  <strong>portfolio.css</strong> avec
+                  <strong>flexbox</strong> et ses paramètres comme
+                  <strong>align-items</strong>.
+                </p>
+                <button onclick="handleHelp(1)">FERMER</button>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <label for="css_step_3">Étape 3</label>
+                <input type="checkbox" name="css_step_3" id="css_step_3" />
+              </th>
+              <td>
+                <p>
+                  Pour les écrans de moins de <strong>700px</strong>, tu peux
+                  <strong>supprimer</strong> l'image du <strong>bureau</strong>.
+                </p>
+              </td>
+              <td class="problem">
+                <p>Tu as des difficultés ?</p>
+                <button onclick="handleHelp(2)">UN PETIT COUP DE POUCE</button>
+              </td>
+              <td class="help">
+                <p>
+                  Tu peux utiliser des <strong>media queries</strong> pour les
+                  écrans de moins de <strong>700px</strong> et utiliser
+                  <code>display: none</code>.
+                </p>
+                <button onclick="handleHelp(2)">FERMER</button>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <label for="css_step_4">Étape 4</label>
+                <input type="checkbox" name="css_step_4" id="css_step_4" />
+              </th>
+              <td>
+                <p>
+                  La <strong>liste de compétences</strong> doit être
+                  <strong>sur une seule ligne</strong> pour les écrans de plus
+                  de <strong>700px</strong>.
+                </p>
+              </td>
+              <td class="problem">
+                <p>Tu as des difficultés ?</p>
+                <button onclick="handleHelp(3)">UN PETIT COUP DE POUCE</button>
+              </td>
+              <td class="help">
+                <p>Tu peux utiliser <strong>flexbox</strong>.</p>
+                <button onclick="handleHelp(3)">FERMER</button>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <label for="css_step_5">Étape 5</label>
+                <input type="checkbox" name="css_step_5" id="css_step_5" />
+              </th>
+              <td>
+                <p>
+                  Le bloc <strong>compétences front</strong> doit être
+                  <strong>au-dessus</strong> du bloc
+                  <strong>compétences back</strong> pour les écrans de moins de
+                  <strong>700px</strong>.
+                </p>
+              </td>
+              <td class="problem">
+                <p>Tu as des difficultés ?</p>
+                <button onclick="handleHelp(4)">UN PETIT COUP DE POUCE</button>
+              </td>
+              <td class="help">
+                <p>
+                  Utilise les <strong>media queries</strong> et
+                  <strong>flexbox</strong> avec le paramètre
+                  <strong>flex-direction</strong>.
+                </p>
+                <button onclick="handleHelp(4)">FERMER</button>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <label for="css_step_6">Étape 6</label>
+                <input type="checkbox" name="css_step_6" id="css_step_6" />
+              </th>
+              <td>
+                <p>
+                  Lorsque la <strong>liste de compétences</strong> est sur une
+                  seule ligne, le bloc <strong>compétences front</strong> doit
+                  être à <strong>gauche</strong> et celui des
+                  <strong>compétences back</strong> à
+                  <strong>droite</strong> pour les écrans > 700px.
+                </p>
+              </td>
+              <td class="problem">
+                <p>Tu as des difficultés ?</p>
+                <button onclick="handleHelp(5)">UN PETIT COUP DE POUCE</button>
+              </td>
+              <td class="help">
+                <p>
+                  Utilise <strong>flexbox</strong> avec le paramètre
+                  <strong>flex-direction</strong>.
+                </p>
+                <button onclick="handleHelp(5)">FERMER</button>
+              </td>
+            </tr>
+            <tr>
+              <th scope="rowgroup" rowspan="2" class="optionnal">
+                Étapes optionnelles
+              </th>
+              <th scope="row">
+                <label for="css_step_7">Étape 7</label>
+                <input type="checkbox" name="css_step_7" id="css_step_7" />
+              </th>
+              <td>
+                <p>
+                  <strong>Bonus</strong> : dans la
+                  <strong>liste de projets</strong>, 2 projets sont encore en
+                  développement. Tu peux appliquer une
+                  <strong>opacité</strong> sur leur texte pour tous les écrans.
+                </p>
+              </td>
+              <td class="problem">
+                <p>Tu as des difficultés ?</p>
+                <button onclick="handleHelp(6)">UN PETIT COUP DE POUCE</button>
+              </td>
+              <td class="help">
+                <p>
+                  Utilise la <strong>propriété</strong> CSS sur les liens
+                  (<code>a</code>) comme <code>opacity</code> ou
+                  <code>pointer-events: none</code>.
+                </p>
+                <button onclick="handleHelp(6)">FERMER</button>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <label for="css_step_8">Étape 8</label>
+                <input type="checkbox" name="css_step_8" id="css_step_8" />
+              </th>
+              <td>
+                <p>
+                  <strong>Super Bonus</strong> : la
+                  <strong>liste de projets</strong> doit être sur une seule
+                  ligne pour les écrans de plus de <strong>700px</strong>.
+                </p>
+              </td>
+              <td class="problem">
+                <p>Tu as des difficultés ?</p>
+                <button onclick="handleHelp(7)">UN PETIT COUP DE POUCE</button>
+              </td>
+              <td class="help">
+                <p>
+                  Tu peux utiliser <strong>flexbox</strong> avec ses paramètres
+                  comme <code>justify-content</code>, <code>align-items</code>,
+                  <code>flex-wrap</code>, etc.
+                </p>
+                <button onclick="handleHelp(7)">FERMER</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+      <article>
+        <h2>🌠 Termine avec un peu de JS (~ 2 heures)</h2>
+        <p>
+          Nihl souhaite <strong>plus d'animations</strong> sur la page. Il
+          souhaite qu'il y ait un bouton ou un événement pour déclencher chaque
+          animation.
+        </p>
+        <p>Voici ses instructions :</p>
+
+        <table>
+          <caption>
+            Liste des tâches :
+          </caption>
+          <thead>
+            <tr>
+              <td colspan="2"></td>
+              <th scope="col">💪 Tâches</th>
+              <th scope="colgroup" colspan="2">🆘 Aide</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="rowgroup" rowspan="4" class="basics">
+                Étapes de base
+              </th>
+              <th scope="row">
+                <label for="js_step_1">Étape 1</label>
+                <input type="checkbox" name="js_step_1" id="js_step_1" />
+              </th>
+              <td>
+                <p>
+                  En tant qu'utilisateur, je peux
+                  <strong>changer</strong> l'<strong>image de l'avatar</strong>
+                  en <strong>cliquant</strong> dessus.
+                </p>
+              </td>
+              <td class="problem">
+                <p>Tu as des difficultés ?</p>
+                <button onclick="handleHelp(8)">UN PETIT COUP DE POUCE</button>
+              </td>
+              <td class="help">
+                <p>
+                  Tu dois <strong>sélectionner</strong> l'image de l'<strong
+                    >avatar</strong
+                  >
+                  dans le DOM et <strong>changer</strong> sa source
+                  (<code>src</code>) vers une autre image, comme celle dans le
+                  dossier "image/avatar.svg".
+                </p>
+                <button onclick="handleHelp(8)">FERMER</button>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <label for="js_step_2">Étape 2</label>
+                <input type="checkbox" name="js_step_2" id="js_step_2" />
+              </th>
+              <td>
+                <p>
+                  En tant qu'utilisateur, je peux <strong>remplacer</strong> le
+                  texte <span id="name">Matt</span> du paragraphe par
+                  <strong>mon nom</strong> et changer sa
+                  <strong>couleur</strong> en <strong>blanc</strong>.
+                </p>
+              </td>
+              <td class="problem">
+                <p>Tu as des difficultés ?</p>
+                <button onclick="handleHelp(9)">UN PETIT COUP DE POUCE</button>
+              </td>
+              <td class="help">
+                <p>
+                  Utilise la fonction <strong>prompt</strong> pour demander le
+                  nom.
+                </p>
+                <p>
+                  Crée un <strong>bouton</strong> pour ouvrir le prompt.
+                  Ensuite, utilise-le pour <strong>modifier</strong> le contenu
+                  de <span id="firstname">Matt</span> et
+                  <strong>changer</strong> sa couleur en blanc.
+                </p>
+                <button onclick="handleHelp(9)">FERMER</button>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <label for="js_step_3">Étape 3</label>
+                <input type="checkbox" name="js_step_3" id="js_step_3" />
+              </th>
+              <td>
+                <p>
+                  En tant qu'utilisateur, je peux <strong>remplacer</strong> la
+                  couleur de fond <strong>rose</strong> par la couleur
+                  <span class="purple">#750ff7</span> avec le même bouton et
+                  prompt.
+                </p>
+              </td>
+              <td class="problem">
+                <p>Tu as des difficultés ?</p>
+                <button onclick="handleHelp(10)">UN PETIT COUP DE POUCE</button>
+              </td>
+              <td class="help">
+                <p>Demande la couleur dans le <strong>prompt</strong>.</p>
+                <p>
+                  Utilise ensuite la valeur entrée pour
+                  <strong>remplacer</strong> la couleur de fond rose.
+                </p>
+                <button onclick="handleHelp(10)">FERMER</button>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <label for="js_step_4">Étape 4</label>
+                <input type="checkbox" name="js_step_4" id="js_step_4" />
+              </th>
+              <td>
+                <p>
+                  En tant qu'utilisateur, je peux
+                  <strong>remplacer</strong> tous les éléments de couleur
+                  <strong>rose</strong> par la couleur
+                  <span class="purple">#750ff7</span>.
+                </p>
+              </td>
+              <td class="problem">
+                <p>Tu as des difficultés ?</p>
+                <button onclick="handleHelp(11)">UN PETIT COUP DE POUCE</button>
+              </td>
+              <td class="help">
+                <p>
+                  Utilise un <strong>prompt</strong> pour demander une couleur
+                  et applique-la à tous les éléments de couleur rose.
+                </p>
+                <button onclick="handleHelp(11)">FERMER</button>
+              </td>
+            </tr>
+            <tr>
+              <th scope="rowgroup" rowspan="3" class="optionnal">
+                Étapes optionnelles
+              </th>
+              <th scope="row">
+                <label for="js_step_5">Étape 5</label>
+                <input type="checkbox" name="js_step_5" id="js_step_5" />
+              </th>
+              <td>
+                <p>
+                  <strong>Bonus</strong> : je peux <strong>changer</strong> la
+                  <strong>couleur de tous les liens</strong> HTML
+                  (<code>a</code>) par <span class="purple">#750ff7</span>.
+                </p>
+              </td>
+              <td class="problem">
+                <p>Tu as des difficultés ?</p>
+                <button onclick="handleHelp(12)">UN PETIT COUP DE POUCE</button>
+              </td>
+              <td class="help">
+                <p>
+                  Sélectionne tous les <code>a</code> avec
+                  <code>document.querySelectorAll</code> et utilise une boucle
+                  pour <strong>modifier</strong> leur couleur.
+                </p>
+                <button onclick="handleHelp(12)">FERMER</button>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <label for="js_step_6">Étape 6</label>
+                <input type="checkbox" name="js_step_6" id="js_step_6" />
+              </th>
+              <td>
+                <p>
+                  <strong>Bonus</strong> : je peux
+                  <strong>changer tous les éléments <code>li</code></strong> de
+                  la liste <strong>dev tools front</strong> avec un simple
+                  bouton.
+                </p>
+              </td>
+              <td class="problem">
+                <p>Tu as des difficultés ?</p>
+                <button onclick="handleHelp(13)">UN PETIT COUP DE POUCE</button>
+              </td>
+              <td class="help">
+                <p>
+                  Sélectionne tous les <code>li</code> de la liste et utilise
+                  une boucle pour les remplacer par une liste personnalisée (ex.
+                  : VSCode, GitHub, Terminal).
+                </p>
+                <button onclick="handleHelp(13)">FERMER</button>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <label for="js_step_7">Étape 7</label>
+                <input type="checkbox" name="js_step_7" id="js_step_7" />
+              </th>
+              <td>
+                <p>
+                  <strong>Super Bonus</strong> : je peux, à l'aide d'un
+                  <strong>bouton</strong> et d'un <strong>input</strong>,
+                  <strong>ajouter</strong> un nouvel élément <code>li</code> à
+                  la liste <strong>dev tools back</strong>.
+                </p>
+              </td>
+              <td class="problem">
+                <p>Tu as des difficultés ?</p>
+                <button onclick="handleHelp(14)">UN PETIT COUP DE POUCE</button>
+              </td>
+              <td class="help">
+                <p>
+                  Crée une <strong>variable</strong> pour le
+                  <strong>formulaire</strong>, un champ
+                  <strong>input</strong> et la
+                  <strong>liste dev tools back</strong>.
+                </p>
+                <p>
+                  Ajoute une fonction à l'événement <code>onsubmit</code>, crée
+                  un nouvel élément <code>li</code> avec
+                  <code>createElement</code> et ajoute la
+                  <strong>valeur de l'input</strong> avec
+                  <code>innerHTML</code>.
+                </p>
+                <p>Puis ajoute ce nouvel élément à la <code>ul</code>.</p>
+                <button onclick="handleHelp(14)">FERMER</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+    </main>
+    <script src="js/home.js"></script>
+  </body>
+</html>
