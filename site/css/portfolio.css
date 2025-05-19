@@ -131,6 +131,9 @@ p {
   color: var(--purple);
 }
 
+.projects .indev { opacity: .7; }
+.projects a.disabled { pointer-events: none; }
+
 .box {
   width: 25%;
   padding: calc(var(--gutter) * 2);
