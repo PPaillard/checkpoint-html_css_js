@@ -10,3 +10,8 @@ firstname.addEventListener("click", () => {
     firstname.textContent = "Zaher";
     firstname.style.color = "white";
 })
+
+document.body.addEventListener("dblclick", () => {
+    let couleur = prompt("Veuillez selectionner une couleur de fond:");
+    document.body.style.backgroundColor = couleur;
+})
