@@ -128,4 +128,8 @@ p {
   .desktop {
     text-align: center;
   }
+  .bloc-competence {
+    display: flex;
+    justify-content: space-between;
+  }
 }
