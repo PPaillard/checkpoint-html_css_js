@@ -23,10 +23,19 @@ const persons = [
   { name: 'Penelope', experience: 7, job: 'web dev' },
 ];
 
-*/
+let seniorDev=[];
+let seniorData=[];
 
 function findSeniors(persons) {
+  for (const person of persons){
+    if (persons.job === 'web dev' && persons.experience >= 5){
+      seniorDev += person
+    } else if (persons.job === 'data analyst' && persons.experience >= 5){
+      seniorData += person
+    }
+  }
+  return seniorDev && seniorData
   // Your code here !
 }
-
+*/
 module.exports = findSeniors;
