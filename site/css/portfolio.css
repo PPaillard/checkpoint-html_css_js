@@ -33,10 +33,30 @@ p {
 }
 
 .desktop {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
   margin: 0;
   margin-top: calc(var(--gutter) * 5);
   margin-bottom: calc(var(--gutter) * -0.3125);
 }
+
+.desktop img {
+  width: 150px;
+  height: 150px;
+}
+
+.desktop p {
+  text-align: center;
+}
+
+@media (min-width: 700px){
+  .desktop { 
+    align-items: center; 
+  }
+}
+
 
 .description {
   color: var(--light);
