@@ -145,4 +145,9 @@ p {
     display: flex;
     justify-content: space-between;
   }
+
+  .projects-list {
+    display: flex;
+    justify-content: space-between;
+  }
 }
