@@ -109,12 +109,22 @@ p {
   color: var(--purple);
 }
 
+@media screen and (max-width: 700px) {
+ .desktop {
+  display: none;
+ }
+  
+}
+
 @media screen and (min-width: 700px) {
   nav {
     display: flex;
     justify-content: space-between;
   }
 
+ .banniere {
+    text-align: center;
+  }
   .desktop {
     text-align: center;
   }
