@@ -76,14 +76,25 @@ p {
 }
 
 .skills {
-  margin-top: calc(var(--gutter) * -2);
   border-radius: var(--radius);
   padding: 0 10%;
 }
 
+
 .skills--title {
-  margin: calc(var(--gutter) * -2) 0;
   text-align: var(--textAlign);
+  display: block;
+  width: 100%;
+}
+
+.skills .list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+@media (min-width: 700px){
+  .skills .list { flex-direction: row; }
 }
 
 .column {
