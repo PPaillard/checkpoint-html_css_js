@@ -108,3 +108,14 @@ p {
 .purple-text {
   color: var(--purple);
 }
+
+@media screen and (min-width: 700px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .desktop {
+    text-align: center;
+  }
+}
