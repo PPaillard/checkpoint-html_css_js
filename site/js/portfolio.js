@@ -27,3 +27,15 @@ btnLiens.addEventListener("click", () => {
         lien.style.color = couleur2;
     }
 })
+
+let btnFront = document.getElementById("btnFront");
+let frontLis = document.querySelectorAll("#front-dev-tools>li");
+
+btnFront.addEventListener("click", () => {
+    for (let index = 0; index < 4; index++) {
+        let choix = prompt("Entrez le nom de l'outil de développement numero " + (index + 1));
+        frontLis[index].textContent = choix;
+
+    }
+}
+);
