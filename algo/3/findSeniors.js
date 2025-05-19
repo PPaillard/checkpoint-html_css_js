@@ -3,7 +3,7 @@ Voici un exemple de tableau de personnes. Écris une fonction qui à partir d'un
 lui-même contenant deux sous-tableaux :
 - Le premier contient uniquement des devs web seniors
 - Le second ne contient que des data analysts seniors
-(Étant donné qu'une personne est senior si elle a 5 ans d'expérience ou plus)
+(Étant donné qu'une personne est senior si elle a 5 ans d'expérience ou plus)*/
 
 const persons = [
   { name: 'Mary', experience: 2, job: 'web dev' },
@@ -23,19 +23,27 @@ const persons = [
   { name: 'Penelope', experience: 7, job: 'web dev' },
 ];
 
-let seniorDev=[];
-let seniorData=[];
 
 function findSeniors(persons) {
+
+  let seniorDev=[];
+let seniorData=[];
+
+let i = 0
+let j = 0
   for (const person of persons){
-    if (persons.job === 'web dev' && persons.experience >= 5){
-      seniorDev += person
-    } else if (persons.job === 'data analyst' && persons.experience >= 5){
-      seniorData += person
+    if (person.experience >= 5){
+      if (person.job === 'web dev'){
+        i = seniorDev.length
+        dev[i] = { name: person.name, experience: person.experience };
+    } else if (persons.job === 'data analyst'){
+        j = seniorData.length
+        seniorData[j] = {name: person.name, experience: person.experience}
     }
   }
-  return seniorDev && seniorData
+  
   // Your code here !
 }
-*/
+return [seniorDev, seniorData]
+}
 module.exports = findSeniors;
