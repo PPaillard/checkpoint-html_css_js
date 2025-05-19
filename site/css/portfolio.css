@@ -94,7 +94,7 @@ p {
 }
 
 @media (min-width: 700px){
-  .skills .list { flex-direction: row; }
+  .skills .list { flex-direction: row-reverse; justify-content: flex-end; }
 }
 
 .column {
