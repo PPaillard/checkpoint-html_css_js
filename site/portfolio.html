@@ -26,8 +26,13 @@
       <!-- Première bannière avec le titre, une description, un avatar et une image bureau -->
       <!-- Tu peux utiliser l'image avatar dans le dossier image -->
       <section>
+        <div id="intro">
+          <h2>Hello World</h2>
+          <img src="image\avatar.svg" alt="avatar" width="75vh">
+          <p>Bienvenue sur mon portfolio</p>
+        </div>
         <figure class="desktop">
-          <img src="image/desktop.svg" alt="bureau" />
+          <img id="bureau" src="image/desktop.svg" alt="bureau" />
         </figure>
       </section>
 
@@ -52,6 +57,7 @@
       <!-- Bloc de compétences front-end et back-end -->
       <article class="skills">
         <h2 class="skills--title">Mes compétences</h2>
+        <div id="skills">
         <section class="column">
           <img src="image/frontend.svg" alt="" />
           <h3>Développeur Back-end</h3>
@@ -77,6 +83,7 @@
             <li>Modifie moi</li>
           </ul>
         </section>
+      </div>
       </article>
 
       <!-- Troisième bannière avec la liste de tous tes projets -->
@@ -86,7 +93,7 @@
           Voici quelques projets sur lesquels j'ai travaillé récemment. Tu veux
           en voir plus ? Envoie-moi un e-mail.
         </p>
-
+<div id="flex-box"></div>
         <section class="box">
           <img
             src="https://mattfarley.ca/img/logos/kybercore.svg"
