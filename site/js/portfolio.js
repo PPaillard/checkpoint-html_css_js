@@ -37,7 +37,14 @@ function changeAvatar() {
             textPink[i].style.color = "#750ff7";
         }
     });
+const a = document.querySelectorAll("a");
+const changeLinkColor = document.getElementById("changeLinkColor");
 
+changeLinkColor.addEventListener("click", () => {
+    for(let i = 0; i < a.length; i++){
+        a[i].style.color = "#750ff7";
+    }
+})
 
 const changeLi = document.getElementById("changeLi");
 const list = document.querySelector("#front-dev-tools");
