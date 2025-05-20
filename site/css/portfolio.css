@@ -134,11 +134,12 @@ p {
     flex-direction: row-reverse;
     justify-content: center;
     gap: 1rem;
-    margin-top: 2%;
+    
 
-   
-
-  }
+   }
+   .skills--title {
+    order: 3
+   }
 
 }
 
@@ -151,6 +152,11 @@ p {
     flex-direction: column-reverse;
     
   }
+  .skills--title {
+    order: 3;
+  }
   
-  
+  .column{
+    margin-top: 8%;
+  }
 }
