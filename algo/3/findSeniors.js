@@ -26,7 +26,7 @@ const persons = [
 
 function findSeniors(persons) {
 
-  let seniorDev=[];
+let seniorDev=[];
 let seniorData=[];
 
 let i = 0
@@ -35,7 +35,7 @@ let j = 0
     if (person.experience >= 5){
       if (person.job === 'web dev'){
         i = seniorDev.length
-        dev[i] = { name: person.name, experience: person.experience };
+        seniorDev[i] = { name: person.name, experience: person.experience };
     } else if (persons.job === 'data analyst'){
         j = seniorData.length
         seniorData[j] = {name: person.name, experience: person.experience}
