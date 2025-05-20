@@ -39,7 +39,9 @@
             tincidunt.
           </div>
         </div>
-        <div><img id="img-avatar" src="image/avatar-bis.png" alt="avatar" max-width="auto" /></div>
+        <div>
+          <img id="img-avatar" src="image/avatar-bis.png" alt="avatar" />
+        </div>
         <figure class="desktop">
           <img src="image/desktop.svg" alt="bureau" />
         </figure>
@@ -52,6 +54,11 @@
             Salut, je suis <span id="firstname">Matt</span>. Ravi de te
             rencontrer.
           </h1>
+          <br />
+          <button id="changerlenom">Changer le nom</button>
+          <button id="changerlefond">
+            Changer la couleur de fond de la bannière
+          </button>
           <p>
             Depuis le début de mon parcours en tant que développeur freelance il
             y a près de 10 ans, j'ai travaillé à distance pour des agences,
@@ -65,32 +72,35 @@
 
       <!-- Bloc de compétences front-end et back-end -->
       <article class="skills">
-        <h2 class="skills--title">Mes compétences</h2>
-        <section class="column back-end">
-          <img src="image/frontend.svg" alt="" />
-          <h3>Développeur Back-end</h3>
-          <p>J'aime coder les choses depuis zéro.</p>
-          <h4 class="pink-text">Langages que je parle :</h4>
-          <p>MySQL</p>
-          <h4 class="pink-text">Outils de développement :</h4>
-          <ul>
-            <li>VSCode</li>
-          </ul>
-        </section>
-        <section class="column front-end">
-          <img src="image/frontend.svg" alt="" />
-          <h3>Développeur Front-end</h3>
-          <p>J'adore donner vie aux idées.</p>
-          <h4 class="pink-text">Langages que je parle :</h4>
-          <p>HTML, CSS</p>
-          <h4 class="pink-text">Outils de développement :</h4>
-          <ul id="front-dev-tools">
-            <li>Modifie moi</li>
-            <li>Modifie moi</li>
-            <li>Modifie moi</li>
-            <li>Modifie moi</li>
-          </ul>
-        </section>
+        <div id="container-skills">
+          <h2 class="skills--title">Mes compétences</h2>
+
+          <section class="column back-end">
+            <img src="image/frontend.svg" alt="" />
+            <h3>Développeur Back-end</h3>
+            <p>J'aime coder les choses depuis zéro.</p>
+            <h4 class="pink-text">Langages que je parle :</h4>
+            <p>MySQL</p>
+            <h4 class="pink-text">Outils de développement :</h4>
+            <ul>
+              <li>VSCode</li>
+            </ul>
+          </section>
+          <section class="column front-end">
+            <img src="image/frontend.svg" alt="" />
+            <h3>Développeur Front-end</h3>
+            <p>J'adore donner vie aux idées.</p>
+            <h4 class="pink-text">Langages que je parle :</h4>
+            <p>HTML, CSS</p>
+            <h4 class="pink-text">Outils de développement :</h4>
+            <ul id="front-dev-tools">
+              <li>Modifie moi</li>
+              <li>Modifie moi</li>
+              <li>Modifie moi</li>
+              <li>Modifie moi</li>
+            </ul>
+          </section>
+        </div>
       </article>
 
       <!-- Troisième bannière avec la liste de tous tes projets -->
