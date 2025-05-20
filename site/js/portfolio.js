@@ -22,9 +22,9 @@ btn.addEventListener('click', () => {
 
 // Exo 3
 const changeColor = document.querySelector('#changeColor')
-const pink = document.getElementsByClassName("pink-bg")
+const pinkText = document.getElementsByClassName("pink-text")
 changeColor.addEventListener('click', () => {
-    for(const color of pink){
+    for(const color of pinkText){
         color.classList.add("changeColors")
     }
     //pink. = "#750ff7"
@@ -33,7 +33,7 @@ changeColor.addEventListener('click', () => {
 
 // Exo 4 
 const myColor = document.querySelector('#myColor')
-
+const pink = document.getElementsByClassName("pink-bg")
 myColor.addEventListener('click', () => {
     let mycolor = prompt("Donnez une couleur:")
      if (mycolor === null) {
