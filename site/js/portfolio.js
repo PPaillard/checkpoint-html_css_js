@@ -15,9 +15,13 @@ let btnFond = document.getElementById("btnFond");
 
 btnFond.addEventListener("click", () => {
     let couleur1 = prompt("Veuillez selectionner une couleur de fond:");
-    document.body.style.backgroundColor = couleur1;
-})
+    let bgsPink = document.getElementsByClassName("pink-bg");
 
+    for (const bgPink of bgsPink) {
+        bgPink.style.backgroundColor = couleur1;
+    }
+
+});
 let btnLiens = document.getElementById("btnLiens");
 
 btnLiens.addEventListener("click", () => {
