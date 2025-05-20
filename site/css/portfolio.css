@@ -134,11 +134,21 @@ p {
 .projects .indev { opacity: .7; }
 .projects a.disabled { pointer-events: none; }
 
+.box-list {
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 700px){
+  .box-list {
+    display: flex;
+  }
+}
+
 .box {
-  width: 25%;
+  width: 100%;
   padding: calc(var(--gutter) * 2);
   border: var(--styledBorder);
-  margin: calc(var(--gutter) * 1.25);
   border-radius: var(--radius);
   box-shadow: var(--styledShadow);
 }
