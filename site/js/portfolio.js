@@ -52,8 +52,8 @@ const listLi = list.querySelectorAll("li");
 const newList = ["VScode", "Photoshop", "Laravel", "MacOS"];
 
 changeLi.addEventListener("click", () => {
-    for(let i = 0; i < listLi.length; i++){
-        for(let j = 0; j < newList.length; j++){
+    for(let j = 0; j < newList.length; j++){
+        for(let i = 0; i < listLi.length; i++){
             
             listLi[i].textContent = newList[j++]
         }
