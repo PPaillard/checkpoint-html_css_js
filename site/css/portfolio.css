@@ -109,6 +109,12 @@ p {
   color: var(--purple);
 }
 
+
+
+.disabled {
+  opacity: 0;
+}
+
 @media screen and (min-width : 700px) {
   nav {
    
@@ -123,10 +129,12 @@ p {
     flex-wrap: wrap;
   }
   
-  .column  {
+  .skills  {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     justify-content: center;
+    gap: 1rem;
+    margin-top: 2%;
 
    
 
@@ -138,10 +146,11 @@ p {
   .desktop > img {
     display: none;
   } 
-  .skills {
+  .skills  {
     display: flex;
     flex-direction: column-reverse;
     
   }
+  
   
 }
