@@ -49,3 +49,12 @@ btnBack.addEventListener("click", () => {
     newLi.textContent = liContent;
     backList.appendChild(newLi);
 });
+
+let btnHide = document.getElementById("btnHide");
+
+btnHide.addEventListener("click", () => {
+    let buttons = document.querySelectorAll("div>button")
+    for (const button of buttons) {
+        button.remove();
+    }
+});

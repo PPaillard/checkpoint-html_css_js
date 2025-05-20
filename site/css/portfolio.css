@@ -113,6 +113,10 @@ p {
   color: var(--purple);
 }
 
+#btnHide {
+  color: red;
+}
+
 @media screen {
   .disabled {
     color: gray;
