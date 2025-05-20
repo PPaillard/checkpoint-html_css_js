@@ -126,6 +126,10 @@ article.skills {
   margin: 0;
 }
 
+#firstname.w-text {
+  color: #fff;
+}
+
 @media screen and (min-width: 700px) {
   header nav {
     justify-content: space-between;
