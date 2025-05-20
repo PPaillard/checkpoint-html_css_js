@@ -59,3 +59,15 @@ changeLi.addEventListener("click", () => {
         }
     }
 })
+
+const listBack = document.getElementById("backendList");
+const addItemBack = document.getElementById("addItemBack");
+
+addItemBack.addEventListener("click", () => {
+    let li = document.createElement("li");
+    let text = prompt("Merci d'entrer la valeur de la liste");
+    const textnode = document.createTextNode(text);
+
+    li.appendChild(textnode);
+    listBack.appendChild(li);
+});
