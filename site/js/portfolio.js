@@ -12,3 +12,25 @@ bannerAvatar.addEventListener("click", function(e){
     }
     
 });
+
+/* Changement du nom "Matt" par celui de l'utilisateur */
+let bannerName = document.getElementById("firstname");
+bannerName.addEventListener("click", function(e){
+    let saveName = this.innerText;
+    this.innerHTML = `<input type='text' placeholder='${saveName}' id='inputChangeFirstname' oninput="this.size = this.value.length + 1" autocomplete="off" />`;
+    document.getElementById("inputChangeFirstname").focus();
+});
+
+bannerName.addEventListener("focusout", function(e){
+    let newFirstname = document.getElementById("inputChangeFirstname").value,
+        defaultFirstname = document.getElementById("inputChangeFirstname").placeholder;
+
+    if( newFirstname == "" ){
+        bannerName.innerText = defaultFirstname;
+    }else{
+        bannerName.innerText = newFirstname;
+    }
+
+    bannerName.style.color = "#FFFFFF";
+    
+}); 

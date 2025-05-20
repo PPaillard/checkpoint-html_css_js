@@ -71,6 +71,21 @@ p {
   text-align: var(--textAlign);
 }
 
+.description h1 span#firstname input {
+  font-family: "Dosis", sans-serif;
+  font-weight: bold;
+  font-size: calc(var(--gutter) * 1.5);
+  background: transparent;
+  field-sizing: content;
+  border: 0;
+  outline: none;
+  color: #FFFFFF;
+}
+
+.description h1 span#firstname input::placeholder {
+  color: #f0f0f0;
+}
+
 .pink-bg {
   background-color: var(--lightStudentColor);
 }
