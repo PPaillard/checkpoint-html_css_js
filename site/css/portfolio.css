@@ -115,6 +115,13 @@ p {
   opacity: 0;
 }
 
+.bannière {
+  margin-left: 3%;
+}
+.bannière>p {
+  padding: 0;
+}
+
 @media screen and (min-width : 700px) {
   nav {
    
