@@ -35,6 +35,11 @@ p {
 }
 .banner {
   text-align: center;
+  background-color: cornflowerblue;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  color: white;
 }
 .avatar {
   width: 120px;
@@ -120,6 +125,17 @@ p {
   .desktop {
     display: none;
   }
+  .grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    margin-top: 30px;
+    grid-auto-flow: dense;
+  }
+  .b {
+    grid-column: 1;
+    grid-row: 1; /* NEW */
+  }
 }
 @media screen and (min-width:700px) {
   .banner {
@@ -133,7 +149,25 @@ p {
     justify-content: space-between;
     text-align: center;
   }
-  .textBanner {
-    color: rgb(10, 10, 10);
+  .column {
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px;
+  }
+  .grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    margin-top: 30px;
+
+  }
+  .b {
+    grid-column: 1;
+    grid-row: 1; /* NEW */
+  }
+  h2.skills--title{
+    z-index: 50;
+    margin-top: 30px;
   }
 }
