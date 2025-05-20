@@ -33,6 +33,14 @@ p {
   margin-top: calc(var(--gutter) * 5);
   margin-bottom: calc(var(--gutter) * -0.3125);
 }
+.banner {
+  text-align: center;
+}
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
 
 .description {
   color: var(--light);
@@ -108,18 +116,24 @@ p {
 .purple-text {
   color: var(--purple);
 }
-
+@media screen and (max-width:699px) {
+  .desktop {
+    display: none;
+  }
+}
 @media screen and (min-width:700px) {
-  section.banner {
+  .banner {
     display: flex;
     justify-content: center;
     align-items: center;
     justify-items: center;
   }
-  section figure.desktop {
-    display: flex;
-    justify-content: center;
-    align-items: middle;
-    justify-items: center;
+  .bannerDesc{
+    display: inline-flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+  .textBanner {
+    color: rgb(10, 10, 10);
   }
 }
