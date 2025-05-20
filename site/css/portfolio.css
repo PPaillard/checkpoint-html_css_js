@@ -1,10 +1,7 @@
 @media screen and (min-width: 700px) {
-  .menu {
-    display: flex-end ;
-    justify-content: right; 
-    align-items: right ;
+  nav {
+        justify-content: space-between; 
       }
-  
 }
 
 :root {
