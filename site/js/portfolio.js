@@ -26,3 +26,12 @@ document.getElementById("changeColor").addEventListener("click", () => {
     pinkBg.style.backgroundColor = color;
   }
 });
+
+// etape 4
+document.getElementById("changeColorText").addEventListener("click", () => {
+  let color = prompt("Quelle sera la nouvelle couleur de votre texte?");
+  const pinkTexts = document.getElementsByClassName("pink-text");
+  for (const pinkText of pinkTexts) {
+    pinkText.style.color = color;
+  }
+});
