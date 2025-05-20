@@ -108,3 +108,40 @@ p {
 .purple-text {
   color: var(--purple);
 }
+
+@media screen and (min-width : 700px) {
+  nav {
+   
+    justify-content: flex-end;
+    justify-content: space-between;
+    
+  }
+  .bannière{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .column  {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+   
+
+  }
+
+}
+
+@media screen and (max-width: 700px){
+  .desktop > img {
+    display: none;
+  } 
+  .skills {
+    display: flex;
+    flex-direction: column-reverse;
+    
+  }
+  
+}
