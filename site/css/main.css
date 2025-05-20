@@ -58,6 +58,10 @@ button:focus {
 
 #firstname {
   color: red;
+  cursor: pointer;
+}
+#avatar{
+  cursor: pointer;
 }
 @media screen and (min-width:700px) {
   header nav  {
