@@ -8,6 +8,7 @@ userIcon.addEventListener('click', () => {
 // Exo 2
 const nom = document.querySelector("#firstname");
 const btn = document.querySelector("#change")
+
 btn.addEventListener('click', () => {
     let name = prompt("Please enter your name:")
      if (name === null) {
@@ -18,3 +19,17 @@ btn.addEventListener('click', () => {
   }
   }
 )
+
+// Exo 3
+const changeColor = document.querySelector('#changeColor')
+const pink = 
+
+changeColor.addEventListener('click', () => {
+    document.getElementsByClassName("description pink-bg").classList.add("changeColors")
+    //pink.style.backgroundColor = "#750ff7"
+  }
+)
+//????????????
+
+// Exo 4 
+const allPink = document.querySelector('allPink')

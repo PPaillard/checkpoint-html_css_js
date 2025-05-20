@@ -178,4 +178,13 @@ p {
   padding: auto;
   margin: auto;
 }
+.skills--title {
+  text-align: center;
+  
+  display: inline-block;
+}
+}
+.changeColors {
+  background-color: #750ff7;
+  color: #750ff7;
 }
