@@ -2,11 +2,10 @@ function changeName() {
   let person = prompt("Merci d'entrer votre nom");
   if (person != null) {
     document.getElementById("firstname").textContent = person ;
-    document.getElementById("firstname").style.color = "white" ;
+    document.getElementById("firstname").classList.add("white-text") ;
   }
 }
 
-function changeAvatar() {
     const avatar = document.getElementById("avatar");
 
     avatar.addEventListener("click", () => {
@@ -16,17 +15,19 @@ function changeAvatar() {
             avatar.src = "./image/avatar.svg";
         }
     });
-    
-}
 
-    const bgColor = document.querySelector(".description");
-    const changeBg = document.getElementById("changeBg");
+    // const bgColor = document.querySelector(".description");
+    // const changeBg = document.getElementById("changeBg");
 
-    changeBg.addEventListener("click", () => {
-        bgColor.style.backgroundColor = "#750ff7";
+    // changeBg.addEventListener("click", () => {
+    //     bgColor.style.backgroundColor = "#750ff7";
 
-    });
-
+    // });
+    function changeBg() {
+        let value = document.getElementById("changeBg").value;
+        const bgColor = document.querySelector(".description");
+        bgColor.style.backgroundColor = value;
+    }
 
     const textPink = document.getElementsByClassName("pink-text");
     const changeColor = document.getElementById("changeColor");

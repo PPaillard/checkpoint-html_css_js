@@ -18,7 +18,13 @@
         <ul class="menu">
           <li><a href="home.html">Instructions</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="#" id="changeBg">Changer Fond</a></li>
+          <li>
+            <select onchange="changeBg()" name="bgChange" id="changeBg">
+              <option value="#0070c0">Bleu</option>
+              <option value="#750ff7">Violet</option>
+              <option value="#ff0000">Rouge</option>
+            </select>
+          </li>
           <li><a href="#" id="changeColor">Changer texte rose</a></li>
           <li><a href="#" id="changeLinkColor">Changer couleur des liens</a></li>
         </ul>
@@ -32,7 +38,7 @@
         <div>
           <div class="bannerDesc">
             <div class="imgBanner">            
-              <img src="./image/avatar.svg" class="avatar" id="avatar" alt="avatar" onclick="changeAvatar()">
+              <img src="./image/avatar.svg" class="avatar" id="avatar" alt="avatar">
             </div>
             <div class="textBanner">
               <h1>Title</h1>
