@@ -108,3 +108,41 @@ p {
 .purple-text {
   color: var(--purple);
 }
+
+@media screen and (min-width: 700px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .premiere_banniere {
+    display: flex;
+    align-items: center;
+  }
+
+
+  .skills {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .desktop {
+    display: none;
+  }
+
+  .skills{
+    display: flex;
+    flex: auto;
+  }
+
+  .front-end{
+    order: 1;
+  }
+
+  .back-end{
+    order : 2;
+  }
+
+}
