@@ -54,16 +54,15 @@ p {
 .skills {
   margin-top: calc(var(--gutter) * -2);
   border-radius: var(--radius);
-  padding: 10% 10%;
+  padding: 5% 5%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 3rem;
+  justify-content: flex-start;
+  gap: 4rem;
 }
 
 .skills--title {
-  margin: calc(var(--gutter) * -2) 0;
   text-align: var(--textAlign);
 }
 
@@ -128,7 +127,12 @@ p {
   }
 
   .skills {
-    padding: 20% 10%;
+    padding: 10% 10%;
+  }
+
+  .bloc-competence {
+    flex-wrap: wrap;
+    gap: 3rem;
   }
 }
 
@@ -147,8 +151,10 @@ p {
   .bloc-competence {
     display: flex;
     flex-direction: row-reverse;
+    flex-wrap: nowrap;
+
     justify-content: center;
-    gap: 3rem;
+    gap: 4rem;
   }
 
   .projects-list {
