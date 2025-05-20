@@ -34,3 +34,13 @@ bannerName.addEventListener("focusout", function(e){
     bannerName.style.color = "#FFFFFF";
     
 }); 
+
+/* Changement de la couleurs de fond */
+let buttonChangeColor = document.getElementById("btnChangeColor");
+buttonChangeColor.addEventListener("click", function(e){
+    let newColor = prompt("Quelle couleur souhaitez-vous ?");
+    
+    for( const elmt of document.querySelectorAll(".pink-bg") ){
+        elmt.style.background = newColor;
+    }
+});
