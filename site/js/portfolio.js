@@ -71,3 +71,14 @@ btnChangeLinksColors.addEventListener("click", function(e){
         link.style.color = newColor;
     }
 });
+
+/* Changement du texte des li de la dev tools front */
+const newDevToolFront = [ "VSCode", "Github", "Terminal", "Powershell" ];
+let btnChangeFrontDevTools = document.getElementById("btnChangeFrontDevTools");
+btnChangeFrontDevTools.addEventListener("click", function(e){
+    const frontDevTools = document.querySelectorAll("#front-dev-tools li");
+    
+    for( let i = 0; i < frontDevTools.length; i++ ){
+        frontDevTools[i].innerText = newDevToolFront[i];
+    }
+});
