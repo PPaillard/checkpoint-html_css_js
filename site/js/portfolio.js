@@ -60,3 +60,14 @@ btnChangeColorBlueElements.addEventListener("click", function(e){
         }
     }
 });
+
+/* Changement de la couleur de tous les liens */
+let btnChangeLinksColors = document.getElementById("btnChangeLinksColors");
+btnChangeLinksColors.addEventListener("click", function(e){
+    let newColor = prompt("Quelle couleur souhaitez-vous pour les liens ?");
+
+    let links = document.querySelectorAll("a");
+    for( const link of links ){
+        link.style.color = newColor;
+    }
+});
