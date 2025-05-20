@@ -15,7 +15,7 @@ btn.addEventListener('click', () => {
     log.innerText = "OK, maybe next time.";
   } else {
     nom.style.color = 'white'
-    nom.innerHTML = `${name}`;
+    nom.textContent = `${name}`;
   }
   }
 )
@@ -35,12 +35,12 @@ changeColor.addEventListener('click', () => {
 const myColor = document.querySelector('#myColor')
 
 myColor.addEventListener('click', () => {
-    let mycolor = prompt("Please enter your une couleur:")
+    let mycolor = prompt("Donnez une couleur:")
      if (mycolor === null) {
     log.innerText = "OK, maybe next time.";
   } else {
     for(const color of pink){
-    color.style.backgroundColor= `${mycolor}`
+    color.style.backgroundColor= mycolor
     }
 } }
 )

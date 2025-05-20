@@ -16,7 +16,13 @@
   flex-direction: column;
   align-items: flex-start;
   text-align: center;
+}
 
+#intro > p {
+  padding: 0;
+}
+#intro img {
+  max-width: 150px;
 }
 
 img {
@@ -119,6 +125,9 @@ p {
 .purple-text {
   color: var(--purple);
 }
+button {
+  margin: 5px;
+}
 
 /*Il y a un problème avec le menu de navigation, tous les liens doivent être en haut à droite (sauf le logo) pour les écrans de plus de 700px.*/
 @media screen and (min-width: 700px) { 
@@ -129,27 +138,24 @@ p {
   width: 100%;
 }
 #intro {
+  display: flex;
   align-items: center;
   margin: 0 auto;
 }
-@media screen and (max-width: 700px) {
-
-#bureau {
-  display: none;
-}
 .skills--title {
   text-align: center;
-  display: inline-block;
-}
-
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
 }
 #skills {
   display: flex;
   flex-direction: row-reverse;
+  justify-content: center;
   padding: 0 auto;
   margin: 0 auto;
+  gap: 20px;
 }
-
 #flex-box {
   display: flex;
   flex-direction: row;
@@ -160,35 +166,54 @@ p {
   flex: 1;
   padding: auto;
   min-width: 200px; 
-  display: inline-block;
+  display: flex;
+  flex-wrap: wrap;
+}
+.skills {
+  margin-top: 0;
+}}
+
+
+@media screen and (max-width: 700px) {
+#skills {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  padding: 0 auto;
+  margin: 0 auto;
+  gap: 20px;
+}
+#bureau {
+  display: none;
+}
+.skills--title {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+.skills {
+  margin-top: 0;
+}
+#flex-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.box{
+  flex: 1;
+  padding: auto;
+  min-width: 200px; 
+  display: flex;
+  flex-wrap: wrap;
 }
 .column {
   width: 100%
 }
- }
-@media screen and (max-width: 700px) {
-
-#bureau {
-  display: none;
-}
-#skills {
-  display: flex;
-  flex-direction: column-reverse;
-  gap: 20px;
-  padding: auto;
-  margin: auto;
-}
 .skills--title {
   text-align: center;
   display: inline-block;
-}
-
-.box{
-  flex: 1;
-  padding: auto;
-  min-width: 150px; 
-  display: flex;
-  flex-wrap: wrap;
 }
 }
 
