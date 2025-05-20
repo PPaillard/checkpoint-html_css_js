@@ -109,8 +109,29 @@ p {
   color: var(--purple);
 }
 
+#banniere {
+  margin: 1rem;
+}
+#banniere > p {
+  padding: 0;
+}
+
 @media screen and (min-width: 700px) {
   header nav {
     justify-content: space-between;
+  }
+  #banniere {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #avatar {
+    max-width: 150px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  figure.desktop {
+    display: none;
   }
 }
