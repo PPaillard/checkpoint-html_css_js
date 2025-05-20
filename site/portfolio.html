@@ -25,58 +25,75 @@
     <main>
       <!-- Première bannière avec le titre, une description, un avatar et une image bureau -->
       <!-- Tu peux utiliser l'image avatar dans le dossier image -->
-      <section>
-        <figure class="desktop">
-          <img src="image/desktop.svg" alt="bureau" />
-        </figure>
+      <section class="avatar">
+        <h1>Avatar</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque optio
+          maiores ratione! Laborum laudantium ullam iusto mollitia, consequuntur
+          doloremque perferendis dolorem facere reprehenderit at distinctio,
+          fuga repudiandae expedita tenetur error.
+        </p>
+        <img src="image/avatar.svg" alt="avatar" />
+
+        <section>
+          <figure class="desktop">
+            <img src="image/desktop.svg" alt="bureau" />
+          </figure>
+        </section>
       </section>
 
       <!-- Deuxième bannière avec une description contenant ton nom et ta présentation -->
       <article>
         <section class="description pink-bg">
           <h1>
-            Salut, je suis <span id="firstname">Matt</span>. Ravi de te
+            Salut, je suis <span id="firstname">SHAFi</span>. Ravi de te
             rencontrer.
           </h1>
           <p>
-            Depuis le début de mon parcours en tant que développeur freelance il
-            y a près de 10 ans, j'ai travaillé à distance pour des agences,
-            conseillé des startups, et collaboré avec des personnes talentueuses
-            pour créer des produits numériques à usage professionnel ou
-            personnel. Je suis discrètement confiant, naturellement curieux, et
-            constamment en train de m'améliorer, un problème à la fois.
+            Depuis le début de mon parcours en tant que développeur
+            d'application mobile il y a près de 1 ans, j'ai travaillé à distance
+            pour des agences, conseillé des startups, et collaboré avec des
+            personnes talentueuses pour créer des produits numériques à usage
+            professionnel ou personnel. Je suis discrètement confiant,
+            naturellement curieux, et constamment en train de m'améliorer, un
+            problème à la fois.
           </p>
         </section>
       </article>
 
       <!-- Bloc de compétences front-end et back-end -->
+
       <article class="skills">
-        <h2 class="skills--title">Mes compétences</h2>
-        <section class="column">
-          <img src="image/frontend.svg" alt="" />
-          <h3>Développeur Back-end</h3>
-          <p>J'aime coder les choses depuis zéro.</p>
-          <h4 class="pink-text">Langages que je parle :</h4>
-          <p>MySQL</p>
-          <h4 class="pink-text">Outils de développement :</h4>
-          <ul>
-            <li>VSCode</li>
-          </ul>
-        </section>
-        <section class="column">
-          <img src="image/frontend.svg" alt="" />
-          <h3>Développeur Front-end</h3>
-          <p>J'adore donner vie aux idées.</p>
-          <h4 class="pink-text">Langages que je parle :</h4>
-          <p>HTML, CSS</p>
-          <h4 class="pink-text">Outils de développement :</h4>
-          <ul id="front-dev-tools">
-            <li>Modifie moi</li>
-            <li>Modifie moi</li>
-            <li>Modifie moi</li>
-            <li>Modifie moi</li>
-          </ul>
-        </section>
+        <div class="competences">
+          <h2 class="skills--title">Mes compétences</h2>
+        </div>
+        <div class="container">
+          <section class="column">
+            <img src="image/frontend.svg" alt="" />
+            <h3>Développeur Back-end</h3>
+            <p>J'aime coder les choses depuis zéro.</p>
+            <h4 class="pink-text">Langages que je parle :</h4>
+            <p>MySQL</p>
+            <h4 class="pink-text">Outils de développement :</h4>
+            <ul>
+              <li>VSCode</li>
+            </ul>
+          </section>
+          <section class="column">
+            <img src="image/frontend.svg" alt="" />
+            <h3>Développeur Front-end</h3>
+            <p>J'adore donner vie aux idées.</p>
+            <h4 class="pink-text">Langages que je parle :</h4>
+            <p>HTML, CSS</p>
+            <h4 class="pink-text">Outils de développement :</h4>
+            <ul id="front-dev-tools">
+              <li>Modifie moi</li>
+              <li>Modifie moi</li>
+              <li>Modifie moi</li>
+              <li>Modifie moi</li>
+            </ul>
+          </section>
+        </div>
       </article>
 
       <!-- Troisième bannière avec la liste de tous tes projets -->
