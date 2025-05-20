@@ -73,12 +73,28 @@ btnChangeLinksColors.addEventListener("click", function(e){
 });
 
 /* Changement du texte des li de la dev tools front */
-const newDevToolFront = [ "VSCode", "Github", "Terminal", "Powershell" ];
-let btnChangeFrontDevTools = document.getElementById("btnChangeFrontDevTools");
+const   newDevToolFront = [ "VSCode", "Github", "Terminal", "Powershell" ],
+        frontDevTools   = document.querySelectorAll("#front-dev-tools li"),
+        btnChangeFrontDevTools = document.getElementById("btnChangeFrontDevTools");
 btnChangeFrontDevTools.addEventListener("click", function(e){
-    const frontDevTools = document.querySelectorAll("#front-dev-tools li");
     
     for( let i = 0; i < frontDevTools.length; i++ ){
         frontDevTools[i].innerText = newDevToolFront[i];
+    }
+});
+
+/* Ajout d'un nouvel élément dans la dev tools back */
+const   btnAddNewItemInBack = document.getElementById("btnAddNewItemInBack"),
+        inputNewItemToAdd   = document.querySelector("input[name='inputNewItemToAdd']")
+        backDevTools        = document.querySelector("#back-dev-tools li");
+
+btnAddNewItemInBack.addEventListener("click", function(e){
+
+    if( inputNewItemToAdd.value != "" ){
+        let newElement      = document.createElement("li"),
+            newElementTxt   = document.createTextNode( inputNewItemToAdd.value );
+
+        newElement.appendChild(newElementTxt);
+        backDevTools.appendChild(newElement);
     }
 });
