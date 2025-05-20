@@ -109,6 +109,16 @@ p {
   color: var(--purple);
 }
 
+.disabled{
+  opacity: 0.35;
+}
+
+.skills{
+  display: flex;
+  flex: auto;
+}
+
+
 @media screen and (min-width: 700px) {
   nav {
     display: flex;
@@ -117,13 +127,26 @@ p {
 
   .premiere_banniere {
     display: flex;
+    flex-direction: column;
     align-items: center;
   }
 
-
   .skills {
+    flex-direction: row;
+  }
+
+    .front-end{
+    order: 1;
+  }
+
+  .back-end{
+    order : 2;
+  }
+
+  .projects-flex{
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
   }
 }
 
@@ -133,8 +156,7 @@ p {
   }
 
   .skills{
-    display: flex;
-    flex: auto;
+    flex-direction: column;
   }
 
   .front-end{
@@ -144,5 +166,4 @@ p {
   .back-end{
     order : 2;
   }
-
 }
