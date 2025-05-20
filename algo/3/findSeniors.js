@@ -27,6 +27,7 @@ const persons = [
 
 function findSeniors(persons) {
   // Your code here !
+  
 }
 
 module.exports = findSeniors;
