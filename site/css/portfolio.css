@@ -108,6 +108,7 @@ p {
 .purple-text {
   color: var(--purple);
 }
+
 /*Il y a un problème avec le menu de navigation, tous les liens doivent être en haut à droite (sauf le logo) pour les écrans de plus de 700px.*/
 @media screen and (min-width: 700px) { 
   .menu {
