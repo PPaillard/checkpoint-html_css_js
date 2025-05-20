@@ -9,6 +9,17 @@ Rappel : Pour vérifier si un nombre est divisible par un autre, tu peux utilise
 
 function isLeapYear(year) {
   // Your code here !
-}
+  // si l'années modulo 4 agal de zero et l'annee est modulo de 400 et egal du zero l'annee sera bissextiles
+  //si non l'annéé ne sera pas bissextille
+  return ( year % 4 === 0 && year % 100 !== 0 ) || (year % 400 ===0);
+  }
+  const year = 2024
+  if (estBissextile (year)) {
+    console.log (`$(year) est une annee est bissexetile`);
+  }else {
+    console.log(`$(year) n'est pas bissextile`);
+  }
+ 
+
 
 module.exports = isLeapYear;
