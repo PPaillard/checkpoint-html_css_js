@@ -1,7 +1,9 @@
-@media screen and (min-width: 700px) {
-  nav {
-        justify-content: space-between; 
-      }
+
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 :root {
@@ -113,4 +115,34 @@ p {
 
 .purple-text {
   color: var(--purple);
+}
+
+@media screen and (max-width: 700px) {
+  .desktop {
+    display: none;
+  }
+   .skills{
+    flex-direction:column-reverse;
+    display: flex;
+
+}
+}
+
+@media screen and (min-width: 700px) {
+  nav {
+    justify-content: space-between;
+    
+  }
+  .banniere {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .skills{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 30px;
+    justify-content: center;
+  }
 }
