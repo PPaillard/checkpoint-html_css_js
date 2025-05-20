@@ -44,3 +44,19 @@ buttonChangeColor.addEventListener("click", function(e){
         elmt.style.background = newColor;
     }
 });
+
+/* Changement de toutes les élements de couleurs bleu */
+let btnChangeColorBlueElements = document.getElementById("btnChangeColorBlueElements");
+btnChangeColorBlueElements.addEventListener("click", function(e){
+    let newColor = prompt("Quelle couleur souhaitez-vous ?");
+    
+    for( const elmt of document.querySelectorAll("[class*='pink-']") ){
+        if( elmt.classList.contains("pink-text") ){
+            elmt.style.color = newColor;
+        }
+
+        if( elmt.classList.contains("pink-bg") ){
+            elmt.style.backgroundColor = newColor;
+        }
+    }
+});
