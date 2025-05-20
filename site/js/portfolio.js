@@ -39,3 +39,13 @@ btnFront.addEventListener("click", () => {
     }
 }
 );
+
+let btnBack = document.getElementById("btnBack");
+let backList = document.getElementById("back-dev-tools");
+
+btnBack.addEventListener("click", () => {
+    let liContent = prompt("Ajouter un outil de développement Back:");
+    let newLi = document.createElement("li");
+    newLi.textContent = liContent;
+    backList.appendChild(newLi);
+});
